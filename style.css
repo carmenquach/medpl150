@@ -43,7 +43,7 @@ p {
 
 p.line {
     max-width: 700px;
-    margin-left: 20px;
+    margin: 0 auto 30px auto; /* Centers the paragraph block */
     font-size: 1.2rem;
     background-color: #7b4280;
     padding: 20px;
