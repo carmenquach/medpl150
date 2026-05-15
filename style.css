@@ -7,13 +7,26 @@
     padding: 0;
 }
 
+
 body {
-    background-color: #a484b3; 
+    background-image: linear-gradient(to top, #935298, #5c6ea3); 
     color: #11203d; 
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     padding: 40px 20px;
     line-height: 1.4;
+    border-width: thick;
+    border-top-style: dotted;
+    border-right-style: dotted;
+    border-bottom-style: dotted;
+    border-left-style: dotted;
+    border-color: #ddcbdf;
+}
+
+body.reverse{
+    background: #5C6EA3;
+    background: radial-gradient(circle,rgba(92, 110, 163, 1) 0%, rgba(147, 82, 152, 1) 75%);
+
 }
 
 /* 2. Typography */
@@ -35,7 +48,7 @@ p {
     max-width: 700px;
     margin: 0 auto 30px auto; /* Centers the paragraph block */
     font-size: 1.2rem;
-    background-color: #7b4280;
+    background-color: #884e90;
     padding: 20px;
     border: 3px solid #1a0e33;
     border-radius: 8px;
@@ -70,7 +83,7 @@ img {
 /* 4. Choice Links (Making them look like buttons) */
 a {
     display: inline-block;
-    background-color: #7b4280; /* Muted sage green */
+    background-color: #7b4280;
     color: #ffffff;
     text-decoration: none;
     padding: 10px 20px;
@@ -78,18 +91,19 @@ a {
     border-radius: 5px;
     border: 3px solid #1a0e33;
     font-weight: bold;
+    font-style: oblique;
     transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
 a:hover {
-    background-color: #5e81ac; /* Lighter green on hover */
+    background-color: #5e81ac;
     transform: scale(1.05); /* Slight pop-out effect */
 }
 
 /* 5. Utility Links (Back to Home, etc.) */
 p a {
     background-color: transparent;
-    color: #1a0e33;
+    color: #122d68;
     border: none;
     padding: 0;
     margin: 0 10px;
@@ -99,6 +113,6 @@ p a {
 
 p a:hover {
     background-color: transparent;
-    color: #ffffff;
+    color: #4ea1bc;
     transform: none;
 }

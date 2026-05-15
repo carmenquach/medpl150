@@ -8,12 +8,19 @@
 }
 
 body {
-    background-color: #a484b3; 
+    background: #A484B3;
+    background: linear-gradient(180deg, rgba(164, 132, 179, 1) 0%, rgba(141, 86, 145, 1) 100%);
     color: #11203d; 
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     padding: 40px 20px;
     line-height: 1.4;
+    border-width: 20px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-color: #1a0e33;
 }
 
 /* 2. Typography */
@@ -35,7 +42,7 @@ p {
     max-width: 700px;
     margin: 0 auto 30px auto; /* Centers the paragraph block */
     font-size: 1.2rem;
-    background-color: #7b4280;
+    background-color: #844e88;
     padding: 20px;
     border: 3px solid #1a0e33;
     border-radius: 8px;
@@ -51,21 +58,43 @@ img {
 }
 
 /* 4. Choice Links (Making them look like buttons) */
+
 a {
     display: inline-block;
-    background-color: #7b4280; /* Muted sage green */
-    color: #ffffff;
+    background-color: #775489;
+    color: #ecd4e9;
     text-decoration: none;
     padding: 10px 20px;
     margin: 10px;
     border-radius: 5px;
     border: 3px solid #1a0e33;
     font-weight: bold;
+    font-size: 22px;
+    text-shadow: 2px 2px #50365c;
     transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
+.restart {
+    text-decoration: none;
+    background-color: #504c85;
+    border: dashed 3px #1a0e33;
+    padding: 15px 50px;
+    font-size: 24px;
+    text-shadow: 2.5px 2.5px #1a0e33;
+
+}
+
+.start {
+    text-decoration: none;
+    background-color: #462e63;
+    border: solid 9px #1a0e33;
+    padding: 35px 60px;
+    font-size: 38px;
+    text-shadow: 5px 5px #1a0e33;
+}
+
 a:hover {
-    background-color: #5e81ac; /* Lighter green on hover */
+    background-color: #5e81ac;
     transform: scale(1.05); /* Slight pop-out effect */
 }
 
@@ -83,4 +112,25 @@ p a:hover {
     background-color: transparent;
     color: #ffffff;
     transform: none;
+}
+
+/* 5. Utility Links (Back to Home, etc.) */
+p a {
+    background-color: transparent;
+    color: #122d68;
+    border: none;
+    padding: 0;
+    margin: 0 10px;
+    text-decoration: underline;
+    text-align: center;
+    text-shadow: none;
+    font-style: oblique;
+
+}
+
+p a:hover {
+    background-color: transparent;
+    color: #4ea1bc;
+    transform: none;
+    text-shadow: 1px 1px #c6bfd5;
 }
